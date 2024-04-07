@@ -1,0 +1,26 @@
+body{
+    font-family: sans-serif;
+}
+
+.side-by-side{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.document-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table>tbody>tr>td{
+    border: 1px solid black;
+    padding: 3px;
+}
+
+tr:nth-child(even) {
+    background: #CCC
+}
+tr:nth-child(odd) {
+    background: #FFF
+}
