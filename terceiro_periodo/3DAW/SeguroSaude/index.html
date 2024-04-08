@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguro Saúde</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <img src="img/logo.jpg" alt="logo" id="logo--saude">
+  <h1>Calcule o valor do seu Seguro de Saúde:</h1>
+
+  <form action="SeguroSaude.php" method="post">
+    <label for="name-complete">Nome: </label>
+    <input type="text" id="name-complete" name="nomeCompleto" placeholder="Nome Completo">
+    <br>
+    <label for="user-age">Faixa Etária: </label>
+    <select id="user-age" name="idade">
+      <option value="" disabled selected hidden>Selecione uma opção</option>
+      <option value="opcao1">20 ou menos</option>
+      <option value="opcao2">Entre 21 a 30</option>
+      <option value="opcao3">Entre 31 e 40</option>
+      <option value="opcao4">Entre 41 e 50</option>
+      <option value="opcao5">Entre 51 e 65</option>
+      <option value="opcao6">Entre 66 ou mais</option>
+    </select>
+    <br>
+    <p>É portador de doença prévia?</p>
+    <input type="radio" id="sim" name="opcao" value="sim">
+    <label for="sim">Sim</label>
+    <input type="radio" id="nao" name="opcao" value="nao">
+    <label for="nao">Não</label>
+    <br>
+    <input type="submit" value="Enviar">
+  </form>
+
+</body>
+
+</html>
