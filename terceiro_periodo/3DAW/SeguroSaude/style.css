@@ -154,9 +154,42 @@ h1{
 }
 
 #logo--saude{
-  margin-top: 150px;
+  margin-top: 50px;
   max-width: 300px;
-  border-radius: 100%;
+}
+
+.container-box{
+  margin: 10%;
+  border-radius: 2%;
+  /* border: 1px solid black; */
+  background-color: white;
+}
+
+.container--content{
+  margin: 2% 35%;
+}
+
+.botao-envio{
+  margin-bottom: 15%;
+  color: white;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #647550;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #647550;
+}
+
+form{
+  text-align: left;
 }
 
 

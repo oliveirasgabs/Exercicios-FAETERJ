@@ -12,32 +12,46 @@
 </head>
 
 <body>
-  <img src="img/logo.jpg" alt="logo" id="logo--saude">
-  <h1>Calcule o valor do seu Seguro de Saúde:</h1>
-
-  <form action="SeguroSaude.php" method="post">
-    <label for="name-complete">Nome: </label>
-    <input type="text" id="name-complete" name="nomeCompleto" placeholder="Nome Completo">
-    <br>
-    <label for="user-age">Faixa Etária: </label>
-    <select id="user-age" name="idade">
-      <option value="" disabled selected hidden>Selecione uma opção</option>
-      <option value="opcao1">20 ou menos</option>
-      <option value="opcao2">Entre 21 a 30</option>
-      <option value="opcao3">Entre 31 e 40</option>
-      <option value="opcao4">Entre 41 e 50</option>
-      <option value="opcao5">Entre 51 e 65</option>
-      <option value="opcao6">Entre 66 ou mais</option>
-    </select>
-    <br>
-    <p>É portador de doença prévia?</p>
-    <input type="radio" id="sim" name="opcao" value="sim">
-    <label for="sim">Sim</label>
-    <input type="radio" id="nao" name="opcao" value="nao">
-    <label for="nao">Não</label>
-    <br>
-    <input type="submit" value="Enviar">
-  </form>
+  <div class="container-box">
+    <img src="img/logo.jpg" alt="logo" id="logo--saude">
+    <h1>Calcule o valor do seu Seguro de Saúde:</h1>
+    <div class="container--content">
+      <form action="SeguroSaude.php" method="post">
+        <label for="name-complete">Nome: </label>
+        <br>
+        <br>
+        <input type="text" id="name-complete" name="nomeCompleto" placeholder="Nome Completo">
+        <br>
+        <br>
+        <br> <label for="user-age">Faixa Etária: </label>
+        <br>
+        <br>
+        <select id="user-age" name="idade">
+          <option value="" disabled selected hidden>Selecione uma opção</option>
+          <option value="opcao1">20 ou menos</option>
+          <option value="opcao2">Entre 21 a 30</option>
+          <option value="opcao3">Entre 31 e 40</option>
+          <option value="opcao4">Entre 41 e 50</option>
+          <option value="opcao5">Entre 51 e 65</option>
+          <option value="opcao6">Entre 66 ou mais</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <p>É portador de doença prévia?</p>
+        <br>
+        <input type="radio" id="sim" name="opcao" value="sim">
+        <label for="sim">Sim</label>
+        <br>
+        <input type="radio" id="nao" name="opcao" value="nao">
+        <label for="nao">Não</label>
+        <br>
+        <br>
+        <br>
+        <button type="submit" value="Enviar" class="botao-envio">Enviar</button>
+      </form>
+    </div>
+  </div>
 
 </body>
 
